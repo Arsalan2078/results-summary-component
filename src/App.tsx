@@ -1,5 +1,11 @@
+import ResultsSummary from "./components/ResultsSummary";
+
 function App() {
-  return <>App</>;
+  return (
+    <>
+      <ResultsSummary />
+    </>
+  );
 }
 
 export default App;
