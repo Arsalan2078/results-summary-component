@@ -1,0 +1,18 @@
+@use "./breakpoints";
+
+@function px-to-rem($value) {
+  @return calc(calc($value / 16) / 1px) * 1rem;
+}
+
+@function generate-clamp(
+  $value-min,
+  $value-max,
+  $width-min: breakpoints.$bp-mobile,
+  $width-max: breakpoints.$bp-desktop
+) {
+  $slope: calc(($value-max - $value-min) / ($width-max - $width-min));
+  $y-axis-intersection: $value-min - ($slope * $width-min);
+  $preferred-value: calc(#{$y-axis-intersection} + #{$slope} * 100vw);
+
+  @return clamp($value-min, $preferred-value, $value-max);
+}

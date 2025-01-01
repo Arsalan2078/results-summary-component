@@ -1,0 +1,54 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+
+b {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+i {
+  font-style: italic;
+}
+
+label {
+  cursor: default;
+}
+
+q:before {
+  content: open-quote;
+}
+
+q:after {
+  content: close-quote;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+small {
+  font-size: smaller;
+}
+
+strong {
+  font-weight: bold;
+}

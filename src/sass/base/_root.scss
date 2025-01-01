@@ -1,0 +1,13 @@
+@use "../abstracts/z-index" as abstracts;
+
+:root {
+  @include abstracts.generate-root-vars(abstracts.$colors);
+  @include abstracts.generate-root-vars(abstracts.$gradients);
+  @include abstracts.generate-root-vars(abstracts.$font-families);
+  @include abstracts.generate-root-vars(abstracts.$font-weights);
+  @include abstracts.generate-root-vars(abstracts.$font-sizes);
+  @include abstracts.generate-root-vars(abstracts.$line-heights);
+  @include abstracts.generate-root-vars(abstracts.$letter-spacings);
+  @include abstracts.generate-root-vars(abstracts.$spacings);
+  @include abstracts.generate-root-vars(abstracts.$radii);
+}

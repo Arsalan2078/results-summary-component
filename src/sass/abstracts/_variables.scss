@@ -1,0 +1,48 @@
+@use "./functions";
+
+$colors: (
+  "prefix": "clr",
+  "values": (),
+);
+
+$gradients: (
+  "prefix": "grd",
+  "values": (),
+);
+
+$font-families: (
+  "prefix": "ff",
+  "values": (),
+);
+
+$font-weights: (
+  "prefix": "fw",
+  "values": (),
+);
+
+$font-sizes: (
+  "prefix": "fs",
+  "values": (),
+);
+
+$line-heights: (
+  "prefix": "lh",
+  "values": (),
+);
+
+$letter-spacings: (
+  "prefix": "ls",
+  "values": (),
+);
+
+$spacings: (
+  "prefix": "spc",
+  "values": (
+    "200": 1rem,
+  ),
+);
+
+$radii: (
+  "prefix": "rds",
+  "values": (),
+);

@@ -1,0 +1,15 @@
+@use "./breakpoints";
+@use "./variables";
+
+@mixin generate-root-vars($map) {
+  @if ($map) {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @if length($values) > 0 {
+      @each $key, $value in $values {
+        --#{$prefix}-#{$key}: #{$value};
+      }
+    }
+  }
+}
