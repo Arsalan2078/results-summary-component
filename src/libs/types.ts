@@ -10,6 +10,10 @@ export interface CategoryProps {
   icon: string;
 }
 
+export interface CategoriesProps {
+  categories: CategoryProps[];
+}
+
 export interface TotalScoreProps {
   totalScore: number;
 }
