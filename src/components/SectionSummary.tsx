@@ -11,16 +11,12 @@ function SectionSummary({ categories }: CategoriesProps) {
           <li key={index}>
             <div className="category">
               <div className="category__info">
-                <img
-                  src={icon}
-                  alt={`Icon-${category}`}
-                  className="category__icon"
-                />
+                <img src={icon} alt={category} className="category__icon" />
                 <div className="category__name">{category}</div>
               </div>
 
               <div className="category__score">
-                <span>{score}</span> / {MAX_SCORE}
+                <b>{score}</b> / {MAX_SCORE}
               </div>
             </div>
           </li>
