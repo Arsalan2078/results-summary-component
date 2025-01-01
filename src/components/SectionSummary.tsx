@@ -16,7 +16,8 @@ function SectionSummary({ categories }: CategoriesProps) {
               </div>
 
               <div className="category__score">
-                <b>{score}</b> / {MAX_SCORE}
+                <span className="category__score__achieved">{score} </span>
+                <span className="category__score__cap">/ {MAX_SCORE}</span>
               </div>
             </div>
           </li>

@@ -10,4 +10,6 @@
   @include abstracts.generate-root-vars(abstracts.$letter-spacings);
   @include abstracts.generate-root-vars(abstracts.$spacings);
   @include abstracts.generate-root-vars(abstracts.$radii);
+
+  font-size: 16px;
 }

@@ -1,7 +1,7 @@
 body {
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-body);
   line-height: 150%;
   letter-spacing: 0;
   text-transform: none;

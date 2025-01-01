@@ -2,27 +2,52 @@
 
 $colors: (
   "prefix": "clr",
-  "values": (),
+  "values": (
+    "primary-light-red": hsl(0, 100%, 67%),
+    "primary-orangey-yellow": hsl(39, 100%, 56%),
+    "primary-green-teal": hsl(166, 100%, 37%),
+    "primary-cobalt-blue": hsl(234, 85%, 45%),
+    "neutral-white": hsl(0, 0%, 100%),
+    "neutral-pale-blue": hsl(221, 100%, 96%),
+    "neutral-light-lavender": hsl(241, 100%, 89%),
+    "neutral-dark-gray-blue": hsl(224, 30%, 27%),
+  ),
 );
 
 $gradients: (
   "prefix": "grd",
-  "values": (),
+  "values": (
+    "background":
+      linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%)),
+    "circle":
+      linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)),
+  ),
 );
 
 $font-families: (
   "prefix": "ff",
-  "values": (),
+  "values": (
+    "serif": (
+      "'Hanken Grotesk'",
+      serif,
+    ),
+  ),
 );
 
 $font-weights: (
   "prefix": "fw",
-  "values": (),
+  "values": (
+    "medium": 500,
+    "bold": 700,
+    "extra-bold": 800,
+  ),
 );
 
 $font-sizes: (
   "prefix": "fs",
-  "values": (),
+  "values": (
+    "body": functions.px-to-rem(18px),
+  ),
 );
 
 $line-heights: (
