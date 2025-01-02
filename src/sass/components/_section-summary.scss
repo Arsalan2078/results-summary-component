@@ -1,0 +1,15 @@
+.section--summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__heading {
+    color: var(--clr-neutral-dark-gray-blue);
+  }
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

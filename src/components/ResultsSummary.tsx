@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CategoryProps } from "../libs/types";
 import { useFetch } from "../libs/hooks";
-import SectionTotalScore from "./SectionTotalScore";
+import SectionYourResult from "./SectionYourResult";
 import SectionSummary from "./SectionSummary";
 
 function ResultsSummary() {
@@ -40,7 +40,7 @@ function ResultsSummary() {
 
       {categories && (
         <div className="results-summary">
-          <SectionTotalScore totalScore={totalScore} />
+          <SectionYourResult totalScore={totalScore} />
           <SectionSummary categories={categories} />
         </div>
       )}

@@ -1,0 +1,20 @@
+.section--your-result {
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding-bottom: 2.5rem;
+  background-image: var(--grd-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+
+  &__heading {
+    color: var(--clr-neutral-light-lavender);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+}

@@ -1,0 +1,9 @@
+.results-summary {
+  height: 100%;
+  flex-basis: 46rem;
+
+  background-color: var(--clr-neutral-white);
+
+  display: flex;
+  flex-direction: column;
+}

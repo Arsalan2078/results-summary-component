@@ -4,9 +4,13 @@ $colors: (
   "prefix": "clr",
   "values": (
     "primary-light-red": hsl(0, 100%, 67%),
-    "primary-orangey-yellow": hsl(39, 100%, 56%),
+    "primary-light-red-transparent": hsla(0, 100%, 67%, 0.05),
+    "primary-orangey-yellow": hsla(39, 100%, 56%),
+    "primary-orangey-yellow-transparent": hsl(39, 100%, 56%, 0.05),
     "primary-green-teal": hsl(166, 100%, 37%),
+    "primary-green-teal-transparent": hsla(166, 100%, 37%, 0.05),
     "primary-cobalt-blue": hsl(234, 85%, 45%),
+    "primary-cobalt-blue-transparent": hsla(234, 85%, 45%, 0.05),
     "neutral-white": hsl(0, 0%, 100%),
     "neutral-pale-blue": hsl(221, 100%, 96%),
     "neutral-light-lavender": hsl(241, 100%, 89%),
@@ -18,7 +22,7 @@ $gradients: (
   "prefix": "grd",
   "values": (
     "background":
-      linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%)),
+      linear-gradient(180deg, hsl(252, 100%, 63%), hsl(241, 81%, 54%)),
     "circle":
       linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)),
   ),
@@ -46,7 +50,11 @@ $font-weights: (
 $font-sizes: (
   "prefix": "fs",
   "values": (
-    "body": functions.px-to-rem(18px),
+    "body":
+      functions.generate-clamp(
+        functions.px-to-rem(16px),
+        functions.px-to-rem(18px)
+      ),
   ),
 );
 

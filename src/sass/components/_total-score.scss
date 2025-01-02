@@ -1,0 +1,25 @@
+.total-score {
+  margin: auto;
+  border-radius: 50%;
+  width: 8.75rem;
+  height: 8.75rem;
+
+  background-image: var(--grd-circle);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__achieved {
+    color: var(--clr-neutral-white);
+    font-size: 3.5rem;
+    font-weight: var(--fw-extra-bold);
+    line-height: normal;
+  }
+
+  &__cap {
+    color: var(--clr-neutral-light-lavender);
+    opacity: 0.51;
+  }
+}
