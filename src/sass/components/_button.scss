@@ -1,4 +1,5 @@
 .button {
+  cursor: pointer;
   border-radius: 999px;
   padding: 1rem;
 
@@ -7,4 +8,9 @@
 
   display: inline-flex;
   justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-image: var(--grd-background);
+  }
 }

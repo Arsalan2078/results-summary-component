@@ -1,8 +1,16 @@
+@use "../abstracts/breakpoints";
+
 .section {
   padding: 1.5rem 2rem;
 
   &__heading {
-    font-size: 1.125rem;
+    font-size: var(--fs-md);
     font-weight: var(--fw-bold);
+  }
+}
+
+@media (min-width: breakpoints.$bp-tablet) {
+  .section {
+    padding: 2.5rem;
   }
 }

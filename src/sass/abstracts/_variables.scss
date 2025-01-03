@@ -55,6 +55,21 @@ $font-sizes: (
         functions.px-to-rem(16px),
         functions.px-to-rem(18px)
       ),
+    "md":
+      functions.generate-clamp(
+        functions.px-to-rem(18px),
+        functions.px-to-rem(24px)
+      ),
+    "lg":
+      functions.generate-clamp(
+        functions.px-to-rem(24px),
+        functions.px-to-rem(32px)
+      ),
+    "xl":
+      functions.generate-clamp(
+        functions.px-to-rem(56px),
+        functions.px-to-rem(72px)
+      ),
   ),
 );
 

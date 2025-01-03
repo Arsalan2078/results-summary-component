@@ -18,7 +18,7 @@ function Category({ category, score, icon }: CategoryProps) {
       </div>
 
       <div className="category__score">
-        <span className="category__score__achieved">{score} </span>
+        <span className="category__score__achieved">{score}</span>
         <span className="category__score__cap">/ {MAX_SCORE}</span>
       </div>
     </div>

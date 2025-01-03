@@ -1,8 +1,10 @@
+@use "../abstracts/breakpoints";
+
 .total-score {
   margin: auto;
   border-radius: 50%;
   width: 8.75rem;
-  height: 8.75rem;
+  aspect-ratio: 1 / 1;
 
   background-image: var(--grd-circle);
 
@@ -13,7 +15,7 @@
 
   &__achieved {
     color: var(--clr-neutral-white);
-    font-size: 3.5rem;
+    font-size: var(--fs-xl);
     font-weight: var(--fw-extra-bold);
     line-height: normal;
   }
@@ -21,5 +23,11 @@
   &__cap {
     color: var(--clr-neutral-light-lavender);
     opacity: 0.51;
+  }
+}
+
+@media (min-width: breakpoints.$bp-tablet) {
+  .total-score {
+    width: 12.5rem;
   }
 }

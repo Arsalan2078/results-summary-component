@@ -15,6 +15,10 @@
   &__score {
     font-weight: var(--fw-bold);
 
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
     &__achieved {
       color: var(--clr-neutral-dark-gray-blue);
     }

@@ -8,7 +8,7 @@
   $value-min,
   $value-max,
   $width-min: breakpoints.$bp-mobile,
-  $width-max: breakpoints.$bp-desktop
+  $width-max: breakpoints.$bp-tablet
 ) {
   $slope: calc(($value-max - $value-min) / ($width-max - $width-min));
   $y-axis-intersection: $value-min - ($slope * $width-min);
