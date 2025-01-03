@@ -320,17 +320,21 @@ body {
   }
 }
 .category {
+  --_background-color: var(--background-color);
+  --_color: var(--color);
   border-radius: 0.75rem;
   padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--_background-color);
 }
 .category__info {
   display: flex;
   flex-direction: row;
   gap: 0.75rem;
+  color: var(--_color);
 }
 .category__score {
   font-weight: var(--fw-bold);
@@ -345,29 +349,22 @@ body {
   color: var(--clr-neutral-dark-gray-blue);
   opacity: 0.5;
 }
+
 .category--reaction {
-  background-color: var(--clr-primary-light-red-transparent);
-}
-.category--reaction__name {
-  color: var(--clr-primary-light-red);
+  --background-color: var(--clr-primary-light-red-transparent);
+  --color: var(--clr-primary-light-red);
 }
 .category--memory {
-  background-color: var(--clr-primary-orangey-yellow-transparent);
-}
-.category--memory__name {
-  color: var(--clr-primary-orangey-yellow);
+  --background-color: var(--clr-primary-orangey-yellow-transparent);
+  --color: var(--clr-primary-orangey-yellow);
 }
 .category--verbal {
-  background-color: var(--clr-primary-green-teal-transparent);
-}
-.category--verbal__name {
-  color: var(--clr-primary-green-teal);
+  --background-color: var(--clr-primary-green-teal-transparent);
+  --color: var(--clr-primary-green-teal);
 }
 .category--visual {
-  background-color: var(--clr-primary-cobalt-blue-transparent);
-}
-.category--visual__name {
-  color: var(--clr-primary-cobalt-blue);
+  --background-color: var(--clr-primary-cobalt-blue-transparent);
+  --color: var(--clr-primary-cobalt-blue);
 }
 
 .congratulation {
