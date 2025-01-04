@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+}
+
+#root {
+  height: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr-neutral-pale-blue);
+}

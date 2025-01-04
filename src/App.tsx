@@ -1,5 +1,13 @@
+import ResultsSummary from "./components/ResultsSummary";
+
+import "./App.css";
+
 function App() {
-  return <>App</>;
+  return (
+    <>
+      <ResultsSummary />
+    </>
+  );
 }
 
 export default App;

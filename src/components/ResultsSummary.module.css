@@ -1,0 +1,12 @@
+.resultsSummary {
+  flex-basis: 48rem;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-body);
+  line-height: normal;
+  letter-spacing: 0;
+}

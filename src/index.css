@@ -171,11 +171,3 @@ meter {
 
   font-size: 16px;
 }
-
-body {
-  font-family: var(--font-family-serif);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-body);
-  line-height: normal;
-  letter-spacing: 0;
-}

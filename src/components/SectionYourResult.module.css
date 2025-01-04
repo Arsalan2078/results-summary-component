@@ -1,0 +1,64 @@
+.sectionYourResult {
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding-bottom: 2.5rem;
+
+  background-image: var(--grd-background);
+
+  gap: 1.5rem;
+}
+
+.heading {
+  color: var(--clr-neutral-light-lavender);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-md);
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.scoreContainer {
+  margin: auto;
+  border-radius: 999px;
+
+  width: 8.75rem;
+  aspect-ratio: 1 / 1;
+  background-image: var(--grd-circle);
+
+  display: block;
+  align-content: center;
+  text-align: center;
+}
+
+.scoreAchieved {
+  color: var(--clr-neutral-white);
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--fs-xl);
+}
+
+.scoreCap {
+  color: var(--clr-neutral-light-lavender);
+  opacity: 0.51;
+}
+
+.congratulation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  text-align: center;
+}
+
+.congratulationHeading {
+  color: var(--clr-neutral-white);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lg);
+}
+
+.congratulationParagraph {
+  color: var(--clr-neutral-light-lavender);
+}
