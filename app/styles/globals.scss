@@ -1,0 +1,7 @@
+@use "./abstracts/z-index" as abstracts;
+@use "./base/z-index" as base;
+
+body {
+  background-color: pink;
+  font-family: var(--font-hanken-grotesk);
+}
