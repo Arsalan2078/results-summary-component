@@ -1,30 +1,39 @@
+import Button from "./Button";
+import Congratulation from "./Congratulation";
+import Result from "./Result";
 import styles from "./ResultsSummary.module.scss";
+import TotalScore from "./TotalScore";
 
 export default function ResultsSummary() {
   return (
-    <div className={styles.resultsSummary}>
-      Your Result
-      76
-      of 100
+    <div className={`${styles.resultsSummary}`}>
+      <section className={`${styles.section} ${styles.yourResult}`}>
+        <h2 className="text-preset-md">Your Result</h2>
 
-      Great
-      You scored higher than 65% of the people who have taken these tests.
-      
-      Summary
+        <TotalScore totalScore={76} />
 
-      Reaction
-      80 / 100
+        <Congratulation />
+      </section>
 
-      Memory
-      92 / 100
+      <section className={`${styles.section} ${styles.summary}`}>
+        <h3 className="text-preset-md">Summary</h3>
+        <ul className={styles.resultsList}>
+          <li>
+            <Result category="Reaction" score={80} icon="./icon-reaction.svg" />
+          </li>
+          <li>
+            <Result category="Reaction" score={80} icon="./icon-reaction.svg" />
+          </li>
+          <li>
+            <Result category="Reaction" score={80} icon="./icon-reaction.svg" />
+          </li>
+          <li>
+            <Result category="Reaction" score={80} icon="./icon-reaction.svg" />
+          </li>
+        </ul>
 
-      Verbal
-      61 / 100
-
-      Visual
-      72 / 100
-
-      Continue
+        <Button href="#">Continue</Button>
+      </section>
     </div>
-  )
+  );
 }

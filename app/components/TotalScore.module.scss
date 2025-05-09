@@ -1,0 +1,13 @@
+.totalScore {
+
+
+  border-radius: 999px;
+  max-width: clamp(8.75rem, 5rem + 15.625vw, 12.5rem);
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}

@@ -1,0 +1,25 @@
+.button {
+  padding: 1.125rem 2.25rem;
+  
+  cursor: pointer;
+
+  display: inline-flex;
+  justify-content: center;
+
+  background-color: var(--color-neutral-dark-gray-blue);
+  color: var(--color-neutral-white);
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(
+      360deg,
+      var(--color-gradient-light-royal-blue),
+      #6943ff
+    );
+  }
+
+  &:focus {
+    outline: 0.125rem solid black;
+    outline-offset: 0.125rem;
+  }
+}

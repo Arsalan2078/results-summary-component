@@ -1,0 +1,26 @@
+body {
+  font-family: var(--font-hanken-grotesk);
+  font-weight: var(--font-weight-medium);
+  font-size: clamp(1rem, 0.875rem + 0.5208vw, 1.125rem);
+  line-height: normal;
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.text-preset-xl {
+  font-weight: var(--font-weight-extrabold);
+  font-size: clamp(3.5rem, 2.5rem + 4.1667vw, 4.5rem);
+  line-height: 100%;
+}
+
+.text-preset-lg {
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(1.5rem, 1rem + 2.0833vw, 2rem);
+}
+
+.text-preset-md {
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(1.125rem, 0.75rem + 1.5625vw, 1.5rem);
+}

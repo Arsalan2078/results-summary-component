@@ -1,3 +1,9 @@
 .resultsSummary {
-  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-dark-gray-blue);
+}
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
