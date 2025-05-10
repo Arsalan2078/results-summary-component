@@ -5,7 +5,8 @@ import { ResultProps } from "../types";
 import Button from "./Button";
 import Result from "./Result";
 import styles from "./ResultsSummary.module.scss";
-import TotalScore from "./TotalScore";
+import AverageScore from "./AverageScore";
+import Congratulation from "./Congratulation";
 
 export default function ResultsSummary() {
   const {
@@ -13,8 +14,6 @@ export default function ResultsSummary() {
     isLoading,
     error,
   } = useFetch<ResultProps[]>("./data.json");
-
-  console.log(results);
 
   return (
     <>
@@ -26,31 +25,21 @@ export default function ResultsSummary() {
             <h2 className="text-preset-md">Your Result</h2>
 
             <div className={styles.content}>
-              <TotalScore
-                totalScore={Math.round(
-                  results?.reduce(
-                    (accumulator, result) => accumulator + result.score,
-                    0
-                  ) / results.length
-                )}
-              />
-
-              <div className={styles.congratulation}>
-                <div className="text-preset-lg text-white">Great</div>
-                <p>
-                  Your performance exceed 65% of the people conducting the test
-                  here!
-                </p>
-              </div>
+              <AverageScore scores={results.map((result) => result.score)} />
+              <Congratulation />
             </div>
           </section>
 
           <section className={`${styles.section} ${styles.summary}`}>
             <h3 className="text-preset-md">Summary</h3>
             <ul className={styles.resultsList}>
-              {results.map(({ category, score, icon }, index) => (
+              {results.map((result, index) => (
                 <li key={index}>
-                  <Result category={category} score={score} icon={icon} />
+                  <Result
+                    category={result.category}
+                    score={result.score}
+                    icon={result.icon}
+                  />
                 </li>
               ))}
             </ul>

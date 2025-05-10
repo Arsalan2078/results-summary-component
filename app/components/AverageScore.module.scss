@@ -1,6 +1,6 @@
 @use "../styles/mixins";
 
-.totalScore {
+.averageScore {
   border-radius: 999px;
   width: 8.75rem;
   aspect-ratio: 1 / 1;
@@ -18,7 +18,7 @@
 }
 
 @include mixins.tablet {
-  .totalScore {
+  .averageScore {
     width: 12.5rem;
   }
 }

@@ -1,0 +1,14 @@
+@use "../styles/_mixins.scss";
+
+.congratulation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@include mixins.tablet {
+  .congratulation {
+    gap: 0.875rem;
+  }
+}
