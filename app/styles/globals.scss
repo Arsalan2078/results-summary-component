@@ -1,5 +1,7 @@
-@use "./abstracts/z-index" as abstracts;
-@use "./base/z-index" as base;
+@use "./mixins";
+@use "./reset";
+@use "./root";
+@use "./typography";
 
 // Utility Classes
 .transparent-50 {
@@ -8,4 +10,8 @@
 
 .rounded-full {
   border-radius: 999px;
+}
+
+.text-white {
+  color: var(--color-neutral-white);
 }

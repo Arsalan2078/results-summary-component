@@ -8,7 +8,7 @@ interface TotalScoreProp {
 export default function TotalScore({ totalScore = 0 }: TotalScoreProp) {
   return (
     <div className={`${styles.totalScore}`}>
-      <div className="text-preset-xl">{totalScore}</div>
+      <div className="text-preset-xl text-white">{totalScore}</div>
       <div className="transparent-50 bold">of 100</div>
     </div>
   );

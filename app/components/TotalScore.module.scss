@@ -1,13 +1,24 @@
+@use "../styles/mixins";
+
 .totalScore {
-
-
   border-radius: 999px;
-  max-width: clamp(8.75rem, 5rem + 15.625vw, 12.5rem);
+  width: 8.75rem;
   aspect-ratio: 1 / 1;
+
+  background-image: linear-gradient(
+    var(--color-gradient-violet-blue),
+    var(--color-gradient-persian-blue)
+  );
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
+}
+
+@include mixins.tablet {
+  .totalScore {
+    width: 12.5rem;
+  }
 }
