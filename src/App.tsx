@@ -1,4 +1,5 @@
 import css from "./App.module.scss";
+import ResultsSummary from "./components/ResultsSummary";
 import type { ResultProps } from "./types";
 import useFetch from "./useFetch";
 
@@ -7,16 +8,8 @@ export default function App() {
 
   return (
     <div className={css.app}>
-      {results && (
-        <ul>
-          {results.map(({ category, score, icon }) => (
-            <li>
-              <img src={icon} alt="" />
-              {category}: {score}
-            </li>
-          ))}
-        </ul>
-      )}
+      <h1>Your Results Summary</h1>
+      {results && <ResultsSummary results={results} />}
     </div>
   );
 }

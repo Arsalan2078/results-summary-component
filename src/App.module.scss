@@ -1,4 +1,8 @@
 .app {
   align-content: center;
   min-height: 100dvh;
+
+  @media screen and (min-width: calc(686 / 16 * 1rem)) {
+    padding-inline: clamp(0rem, -21.4375rem + 50vw, 2.5625rem);
+  }
 }
