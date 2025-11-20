@@ -1,16 +1,22 @@
 import css from "./App.module.scss";
+import type { ResultProps } from "./types";
+import useFetch from "./useFetch";
 
 export default function App() {
-  const sentence = `Sunrise, parabellum.`;
+  const { data: results } = useFetch<ResultProps[]>("src/data.json");
 
   return (
     <div className={css.app}>
-      <div data-text-preset="1">{sentence}</div>
-      <div data-text-preset="2">{sentence}</div>
-      <div data-text-preset="3">{sentence}</div>
-      <div data-text-preset="4">{sentence}</div>
-      <div data-text-preset="4-bold">{sentence}</div>
-      <div data-text-preset="5">{sentence}</div>
+      {results && (
+        <ul>
+          {results.map(({ category, score, icon }) => (
+            <li>
+              <img src={icon} alt="" />
+              {category}: {score}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
