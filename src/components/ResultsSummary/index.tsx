@@ -18,9 +18,9 @@ export default function ResultsSummary({
         <section>
           <h2 data-text-preset="3">Your Result</h2>
 
-          <div>
+          <div className={css.circle}>
             <div data-text-preset="1">{getAverageScore({ results })}</div>
-            <div>of 100</div>
+            <div data-text-preset="4-bold">of 100</div>
           </div>
 
           <div>
@@ -37,13 +37,17 @@ export default function ResultsSummary({
 
           <ul>
             {results.map(({ category, score, icon }) => (
-              <li key={category}>
+              <li
+                key={category}
+                className={css.result}
+                data-category={category}
+              >
                 <div>
                   <img src={icon} alt="" />
                   <div>{category}</div>
                 </div>
 
-                <div>
+                <div data-text-preset="4-bold">
                   <div>{score}</div>
                   <div>/ 100</div>
                 </div>

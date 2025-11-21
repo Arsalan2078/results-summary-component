@@ -1,8 +1,13 @@
 .app {
-  align-content: center;
   min-height: 100dvh;
+  padding-inline: clamp(0rem, -2.2673rem + 9.447vw, 2.5625rem);
 
-  @media screen and (min-width: calc(686 / 16 * 1rem)) {
-    padding-inline: clamp(0rem, -21.4375rem + 50vw, 2.5625rem);
+  @media screen and (min-width: calc(768 / 16 * 1rem)) {
+    align-content: center;
+  }
+
+  h1 {
+    position: absolute;
+    left: -99rem;
   }
 }
