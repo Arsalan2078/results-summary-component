@@ -63,11 +63,30 @@
     display: inline-flex;
     justify-content: center;
 
+    cursor: pointer;
+
     border-radius: 99rem;
     padding: 1rem;
 
-    background-color: var(--clr-navy-950);
+    background: linear-gradient(
+      0deg,
+      oklch(0.4633 0.2652 270.21) 0%,
+      oklch(0.5849 0.2384 285.54) 50%,
+      var(--clr-navy-950) 50%
+    );
+
+    background-size: auto 200%;
+    background-position-y: 0%;
+
     color: var(--clr-white);
+
+    transition-property: background-position-y;
+    transition-duration: 0.2s;
+
+    &:hover,
+    &:focus {
+      background-position-y: 100%;
+    }
   }
 }
 
