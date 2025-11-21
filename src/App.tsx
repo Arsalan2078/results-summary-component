@@ -7,9 +7,9 @@ export default function App() {
   const { data: results } = useFetch<ResultProps[]>("data.json");
 
   return (
-    <div className={css.app}>
+    <main className={css.app}>
       <h1>Your Results Summary</h1>
       {results && <ResultsSummary results={results} />}
-    </div>
+    </main>
   );
 }
