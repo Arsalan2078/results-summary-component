@@ -1,3 +1,15 @@
+import css from "./App.module.scss";
+import ResultsSummary from "./components/ResultsSummary";
+import type { ResultProps } from "./types";
+import useFetch from "./useFetch";
+
 export default function App() {
-  return <div>App</div>;
+  const { data: results } = useFetch<ResultProps[]>("src/data.json");
+
+  return (
+    <div className={css.app}>
+      <h1>Your Results Summary</h1>
+      {results && <ResultsSummary results={results} />}
+    </div>
+  );
 }
