@@ -4,7 +4,7 @@ import type { ResultProps } from "./types";
 import useFetch from "./useFetch";
 
 export default function App() {
-  const { data: results } = useFetch<ResultProps[]>("src/data.json");
+  const { data: results } = useFetch<ResultProps[]>("data.json");
 
   return (
     <div className={css.app}>
